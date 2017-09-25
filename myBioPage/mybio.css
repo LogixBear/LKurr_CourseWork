@@ -1,0 +1,24 @@
+.menu {
+  height: 100px;
+  background-color: yellow;    /* Medium blue */
+  font-size: 100px;
+}
+
+.sidebar {
+  width: 33%;
+  height: 500px;
+  float: left;
+  background-color: lightgreen;    /* Red */
+  display: block;
+}
+
+.content {
+  height: 500px;
+  background-color: lightblue;    /* Yellow */
+}
+
+.footer {
+  clear: both; 
+  height: 100px;
+  background-color: red;    /* Light blue */
+}
