@@ -1,6 +1,11 @@
-
 function bChange(){
-    var x = document.getElementById(
-	document.body.style.backgroundColor = "black";
+	var toggle;
+	if (document.body.style.backgroundColor == "black"){
+			document.body.style.backgroundColor = "white";
+			toggle = "ON";
+	} else {
+			document.body.style.backgroundColor = "black";
+			toggle = "OFF";
+	}
+	document.getElementById("phrase").innerHTML = toggle;
 }
-
