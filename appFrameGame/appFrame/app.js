@@ -7,6 +7,7 @@ function MyApp()
 {
 	var version = "v1.0";
 
+
 	// creating a private function
 	function setStatus(message)
 	{
@@ -16,21 +17,23 @@ function MyApp()
 	// creating a public function
 	this.start = function()
 	{
+		document.getElementById("scrtBtn").addEventListener("click",submitSecret);
+		document.getElementById("gssBtn").addEventListener("click",submitGuess);
 		$("#app>header").append(version);
 		setStatus("ready");
 	};
 	
 	function submitSecret() {
-	var secret = document.getElementById("secretNum").value;
+	var secret = parseInt(document.getElementById("secretNum").value);
 	document.getElementById("secretNum").style.color = "#ffffff";
 	document.getElementById("hideMe").style.visibility = "visible";
-}
+	}
 
 	var count=0;
 
 	function submitGuess(){
-		var guess = document.getElementById("guessNum").value; //Obtains the Guessed Number
-		var secret = document.getElementById("secretNum").value; //Obtains the Secret Number
+		var guess = parseInt(document.getElementById("guessNum").value); //Obtains the Guessed Number
+		var secret = parseInt(document.getElementById("secretNum").value); //Obtains the Secret Number
 		var help;
 					count++;
 					if (guess > secret) {
