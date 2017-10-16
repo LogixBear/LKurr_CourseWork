@@ -1,5 +1,5 @@
 function submitSecret() {
-	var secret = document.getElementById("secretNum").value;
+	var secret = parseInt(document.getElementById("secretNum").value);
 	document.getElementById("secretNum").style.color = "#ffffff";
 	document.getElementById("hideMe").style.visibility = "visible";
 }

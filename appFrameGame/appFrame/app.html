@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>LKurr's Guessing Game v2.0</title>
+		<link href="app.css" rel="StyleSheet" />
+		<script src="lib/jquery-3.2.1.min.js"></script>
+		<script src="app.js"></script>
+	</head>
+	<body>
+		<div id="app">
+				<p>
+				Enter a Secret Number: <input type="text" id="secretNum"></br>
+				<button onclick="submitSecret()">Submit Your Number</button>
+				</p>
+				
+				<p class=hidden id=hideMe>
+				Guess Number: <input type="text" id="guessNum"></br>
+				<button onclick="submitGuess()">Try Your Luck</button></br>
+				</p>
+					
+				<p>
+				<span id="demo"> </span></br>
+				<button onclick="location.reload()">Restart the Game!</button>
+				</p>
+				
+			<div id="main"></div>
+			<footer></footer>
+		</div>
+	</body>
+</html>
