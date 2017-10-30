@@ -1,0 +1,19 @@
+#app>header
+{
+	font: 3em Georgia, Geneva, sans-serif;
+	text-align: center;
+}
+
+#app
+{
+    background-color: #ccccff;
+    background: -webkit-linear-gradient(top, #ccccff, #8080ff);
+    background: -moz-linear-gradient(top, #ccccff, #8080ff);
+    background: -ms-linear-gradient(top, #ccccff, #8080ff);
+    background: linear-gradient(top, #ccccff, #8080ff);
+}
+#app>header,
+#app>footer
+{
+    background-color:  #6666ff;
+}

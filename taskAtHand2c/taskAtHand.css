@@ -75,7 +75,7 @@ button {
 #task-list .task.selected
 {
 	padding: 0.6em 0.5em;
-	border: 2px solid orange;
+	border: 2px solid blue;
 	border-radius: 6px;
 	background-color: white;
 }

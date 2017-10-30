@@ -1,9 +1,9 @@
 #app
 {
 	background-color: #bcb;
-	background: -webkit-linear-gradient(top, #bbc, #558);
-	background: -moz-linear-gradient(top, #bbc, #558);
-	background: -ms-linear-gradient(top, #bbc, #558);
+	background: -webkit-linear-gradient(top, #bbc, #585);
+	background: -moz-linear-gradient(top, #bbc, #585);
+	background: -ms-linear-gradient(top, #bbc, #585);
 	background: linear-gradient(top, #bcb, #585);
 }
 #app>header,
