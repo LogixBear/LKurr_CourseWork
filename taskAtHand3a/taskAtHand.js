@@ -95,8 +95,10 @@ function TaskAtHandApp()
 	
 	function toggleDetails($task)
 	{
-		$(".details", $task).slideToggle();
-		$("button.toggle-details", $task).toggleClass("expanded");
+		$(".details",
+	$task).slideToggle();
+		$("button.toggle-details",
+	$task).toggleClass("expanded");
 	}
 	
 	}//End AddTaskElement
