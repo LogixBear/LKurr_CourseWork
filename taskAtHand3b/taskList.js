@@ -1,7 +1,7 @@
 function Task(name)
 {
 	this.name = name;
-	this.id = Task.newTaskId++;
+	this.id = Task.nextTaskId++;
 	this.created = new Date();
 	this.priority = Task.priorities.normal;
 	this.status = Task.statuses.notStarted;

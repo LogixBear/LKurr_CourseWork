@@ -108,7 +108,7 @@ function TaskAtHandApp()
 			$("button.toggle-details", $task).toggleClass("expanded");
 		}
 		
-		//Populates all of the dtaa fields
+		//Populates all of the data fields
 		$(".details input, .details select", $task).each(function() {
 			var $input = $(this);
 			var fieldName = $input.data("field");
@@ -119,24 +119,25 @@ function TaskAtHandApp()
 			onChangeTaskDetails(task.id, $(this));
 		});
 		
-		function onChangeTaskDetails (taskId, $input)
-		{
-			var task = taskList.getTask(taskId)
-			if (task)
-			{
-				var fieldName = $input.data("field");
-				task[fieldName] = $input.val();
-				saveTaskList();
-			}
-		}//end onChangeTaskDetails
-		
 	}//End AddTaskElement
+	
+	function onChangeTaskDetails (taskId, $input)
+	{
+		var task = taskList.getTask(taskId)
+		if (task)
+		{
+			var fieldName = $input.data("field");
+			task[fieldName] = $input.val();
+			saveTaskList();
+		}
+	}//end onChangeTaskDetails
 	
 	function removeTask($task)
 	{
 		$task.remove();
 		saveTaskList();
 	}
+	
 	function moveTask($task, moveUp)
 	{
 			if (moveUp)
@@ -174,12 +175,14 @@ function TaskAtHandApp()
 	function saveTaskList()
 	{
 		/*
-			var tasks = [];
-			$("#task-list .task span.task-name").each(function() {
-				tasks.push($(this).text())
-			});
-			appStorage.setValue("taskList", tasks);
+		var tasks = [];
+		$("#task-list .task span.task-name").each(function() {
+			tasks.push($(this).text())
+		});
+		appStorage.setValue("taskList", tasks);
 			*/
+			
+			
 		if (timeoutId) clearTimeout(timeoutId);
 		setStatus("saving changes...", true);
 		timeoutId = setTimeout(function()
