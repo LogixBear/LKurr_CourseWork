@@ -29,7 +29,6 @@ function TaskList(tasks)
 {
 	tasks = tasks || [];
 
-
 	this.getTasks = function()
 	{
 		return tasks;
@@ -71,12 +70,11 @@ function TaskList(tasks)
 		return (index >= 0 ? tasks[index] : null);
 	};
 
-	this.each = functioin(callback)
+	this.each = function(callback)
 	{
 		for (var i in tasks)
 		{
 			callback(tasks[i]);
 		}
 	};
-
 }
