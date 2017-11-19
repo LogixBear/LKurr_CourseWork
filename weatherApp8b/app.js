@@ -3,7 +3,7 @@
 // using a function contructor form to create an object
 function MyApp()
 {
-	var version = "v8.2";
+	var version = "Weather Widget Example 8.3";
 
 	// creating a private function
 	function setStatus(message)
