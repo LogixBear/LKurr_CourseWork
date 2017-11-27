@@ -16,8 +16,10 @@ function MyApp()
 	{
 		$("#app>header").append(version);
 		setStatus("ready");
+		
 		var $weatherWidget = $("#weather-widget");
 		WeatherWidget = new WeatherWidget();
+		//OnClick
 		$("#getWeather").on("click",function(){
 		WeatherWidget.update();
 		});

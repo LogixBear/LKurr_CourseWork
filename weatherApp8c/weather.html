@@ -16,7 +16,7 @@
 						Latitude: <input id="latitude" type="text"/><br/>
 						Longitude: <input id="longitude" type="text"/>
 					</div>
-					<button id="getWeather">Check Weather</button>
+					<button id="getWeather">Get Location</button>
 					<div class="error">
 						Error: <span></span>
 					</div>
@@ -32,11 +32,11 @@
 							<div class="location"><span></span></div>
 						</header>
 						<section class="conditions">
-							Conditions: <span data-field="weather"></span><br/>
-							Temperature: <span data-field="temperature_string"></span><br/>
-							Feels Like: <span data-field="feelslike_string"></span><br/>
-							Humidity: <span data-field="relative_humidity"></span><br/>
-							Wind: <span data-field="wind_string"></span><br/>
+							Conditions: <span data-field="shortForecast"></span><br/>
+							Temperature: <span data-field="temperature"></span>
+							<span data-field="temperatureUnit"></span><br/>
+							Wind: <span data-field="windSpeed"></span>
+							| Direction: <span data-field="windDirection"></span><br/>
 						</section>
 					</div>
 				</div>

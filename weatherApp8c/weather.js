@@ -4,15 +4,15 @@ function WeatherWidget($widget)
 	{
 		$(".results", $widget).hide();
 		$(".loading", $widget).show();
-		getWeatherReport();	
+		//getWeatherReport();	
 		getLocation();
-		//getCurrentWeather();
+		//populateWeather();
+		getCurrentWeather();	
 	};
+	
 	
 	function getWeatherReport(lat, lon)
 	{	
-		var lat = 43.22;
-		var lon = -71.53;
 		var coors = lat + "," + lon;
 		
 		$.ajax({
@@ -27,11 +27,11 @@ function WeatherWidget($widget)
 	
 	function populateWeather(data)
 	{
-		var observation = data.current_observation;
+		var observation = data.properties.periods[0];
+		var meta = data.properties.properties;
 		
-		//$(".results header img", $widget).attr("src", observation.icon_url);
-		//$(".location>span", $widget).text(data.location.city);
-		$(".location>span", $widget).text(json.properties.city);
+		$(".results header img", $widget).attr("src", observation.icon);
+		$(".location>span", $widget).text(observation.name);
 			
 			$(".conditions>span").each(function(i, e)
 			{
@@ -39,16 +39,14 @@ function WeatherWidget($widget)
 				var field = $span.data("field");
 				$(this).text(observation[field]);
 			});
-			
-			//NEW CODE
-			//$(".results footer img", $widget)
-				//.attr("src", observation.image.url);
-			
+
 			$(".loading", $widget).fadeOut(function()
 			{
 				$(".results", $widget).fadeIn();
 			});		
+		
 	}//end populateWeather	
+	
 	
 	function getLocation()
 	{
@@ -57,9 +55,8 @@ function WeatherWidget($widget)
 			navigator.geolocation.getCurrentPosition(
 			function(position)
 			{
-				var lat = $("#latitude").val(position.coords.latitude);
-				var lon = $("#longitude").val(position.coords.longitude);
-				
+				$("#latitude").val(position.coords.latitude);
+				$("#longitude").val(position.coords.longitude);
 			},
 			function(error)
 			{
@@ -67,47 +64,26 @@ function WeatherWidget($widget)
 					.text("ERROR: " + error.message)
 					.slideDown();
 			});
-		}			
-		
-		var lat = $("#latitude").val();
-		//var lat = $("#latitude").val(position.coords.latitude);
-		var lon = $("#longitude").val();
-		//var lon = $("#longitude").val(position.coords.longitude);
-		if (lat && lon)
-		{
-				$("#weather-widget").fadeIn();
-				weatherWidget.update(lat, lon);
-		}
-		
+		}					
 	}//end getLocation
 	
-	/*
-	function ajaxPopulateWeather()
-	{
-		$.ajax({
-			url: "https://api.weather.gov/points/"+ latitude + "," + longitude +"/forecast"
-			dataType : "json"
-		});
-	}
-	*/
-	
-	/*
+
 	function getCurrentWeather()
-	{
+	{		
 		var lat = $("#latitude").val();
-		//var lat = $("#latitude").val(position.coords.latitude);
 		var lon = $("#longitude").val();
-		//var lon = $("#longitude").val(position.coords.longitude);
 		if (lat && lon)
 		{
-				$("#weather-widget").fadeIn();
-				weatherWidget.update(lat, lon);
+				//$("#weather-widget").fadeIn();
+				//weatherWidget.update(lat, lon);
+				$(".error", $widget).hide();
+				getWeatherReport(lat, lon);
+		}
+		else{
+		$(".loading", $widget).hide();
+		$("#getWeather").text("Check Weather");
 		}
 	}
-	*/
-	
-	
-	
 	/*NOTES
 
 	- Review pages 214-219
