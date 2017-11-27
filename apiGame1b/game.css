@@ -1,0 +1,53 @@
+body {
+	margin: auto;
+	text-align: center;
+	background-color: #333333;
+}
+
+header {
+	font-size: 40px;
+	color: #ffbf80;
+}
+#subHead {
+	font-size: 20px;
+	color: #ffe6cc;
+}
+
+#answer, #getAnswer {
+    visibility: hidden;
+}
+
+#game {
+	color:  #f2f2f2;
+}
+#error {
+	color: red;
+	visibility: hidden;
+}
+
+#footer {
+   position: fixed;
+   left: 20px;
+   bottom: 0;
+   color: #f2f2f2;
+   text-align: center;
+}
+
+button.sports, button.movies, button.history, button.television, button.trivia, button.food{
+	background:none;
+	border:none; 
+	color:  #f2f2f2;
+	}
+
+
+#oneHun, #twoHun, #threeHun, #fourHun, #fiveHun, #sixHun, #sevenHun, #eightHun, #nineHun, #thousand, #oneHun1, #twoHun1, #threeHun1, #fourHun1, #fiveHun1, #sixHun1, #sevenHun1, #eightHun1, #nineHun1, #thousand1, #oneHun2, #twoHun2, #threeHun2, #fourHun2, #fiveHun2, #sixHun2, #sevenHun2, #eightHun2, #nineHun2, #thousand2{
+	visibility: visible;
+	background: none;
+	color:  #f2f2f2;
+	width: 65px;
+	height: 30px;
+}
+
+#decision {
+	visibility: hidden;
+}
