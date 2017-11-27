@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Jeopardy!</title>
+		<title>Random Question Generator</title>
 		<link href="game.css" rel="StyleSheet" />
 		<script src="lib/jquery-3.2.1.min.js"></script>
 		<script src="game.js"></script>
@@ -11,13 +11,16 @@
 		<header>JEOPARDY!</header>
 			<p id="subHead">CONCORD'S FAVORITE QUIZ SHOW</p>
 				<div id="game">
-						<button id="getQuestion">QET QUESTION!</button>
-						<p id="difficulty"></p>
-						<p id="category"></p>
-						<p id="question"></p>
+						<button id="getQuestion">GET A QUESTION</button>
+						<p id="question">Question:</p>
+						<p id="difficulty">Points: | Category:</p>
 						<p id="date"></p>
-						<button id="getAnswer">Show Answer...</button>
+						<button id="getAnswer">Show Answer</button>
 						<p id="answer"></p>
-					</div>
+				</div>
+				<div id="error" style="visibility: hidden;" ></div>
+			<div id="footer">
+				<p>Created by Logan Kurr</p>
+			</div>
 	</body>
 </html>
