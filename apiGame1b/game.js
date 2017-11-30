@@ -1,7 +1,9 @@
 "use strict";
 
 function MyApp(){
-
+ var realMon;
+ var money;
+ 
 //###############SPORTS START##################
 	$(".sports").on("click",function(){
 		$.ajax({
@@ -26,7 +28,10 @@ function MyApp(){
 				$( "#answer" ).text("Answer: " + data[0].answer);
 				$("#answer").css("visibility", "hidden");
 				$("#getAnswer").css("visibility", "visible");
+				$("#decision").css("visibility", "visible");
 				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
 			});
 	});
 
@@ -44,6 +49,8 @@ function MyApp(){
 				$("#answer").css("visibility", "hidden");
 				$("#getAnswer").css("visibility", "visible");
 				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
 			});
 	});
 	
@@ -61,6 +68,8 @@ function MyApp(){
 				$("#answer").css("visibility", "hidden");
 				$("#getAnswer").css("visibility", "visible");
 				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
 			});
 	});
 	
@@ -78,6 +87,8 @@ function MyApp(){
 				$("#answer").css("visibility", "hidden");
 				$("#getAnswer").css("visibility", "visible");
 				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
 			});
 	});
 	
@@ -95,6 +106,8 @@ function MyApp(){
 				$("#answer").css("visibility", "hidden");
 				$("#getAnswer").css("visibility", "visible");
 				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
 			});
 	});
 	
@@ -112,6 +125,8 @@ function MyApp(){
 				$("#answer").css("visibility", "hidden");
 				$("#getAnswer").css("visibility", "visible");
 				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
 			});
 	});
 	
@@ -129,6 +144,8 @@ function MyApp(){
 				$("#answer").css("visibility", "hidden");
 				$("#getAnswer").css("visibility", "visible");
 				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
 			});
 	});
 	
@@ -146,6 +163,8 @@ function MyApp(){
 				$("#answer").css("visibility", "hidden");
 				$("#getAnswer").css("visibility", "visible");
 				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
 			});
 	});
 	
@@ -163,6 +182,8 @@ function MyApp(){
 				$("#answer").css("visibility", "hidden");
 				$("#getAnswer").css("visibility", "visible");
 				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
 			});
 	});
 	
@@ -180,6 +201,8 @@ function MyApp(){
 				$("#answer").css("visibility", "hidden");
 				$("#getAnswer").css("visibility", "visible");
 				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
 			});
 	})
 //###################SPORTS END#######################
@@ -209,6 +232,8 @@ function MyApp(){
 				$("#answer").css("visibility", "hidden");
 				$("#getAnswer").css("visibility", "visible");
 				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
 			});
 	});
 
@@ -226,6 +251,8 @@ function MyApp(){
 				$("#answer").css("visibility", "hidden");
 				$("#getAnswer").css("visibility", "visible");
 				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
 			});
 	});
 	
@@ -243,6 +270,8 @@ function MyApp(){
 				$("#answer").css("visibility", "hidden");
 				$("#getAnswer").css("visibility", "visible");
 				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
 			});
 	});
 	
@@ -260,6 +289,8 @@ function MyApp(){
 				$("#answer").css("visibility", "hidden");
 				$("#getAnswer").css("visibility", "visible");
 				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
 			});
 	});
 	
@@ -277,6 +308,8 @@ function MyApp(){
 				$("#answer").css("visibility", "hidden");
 				$("#getAnswer").css("visibility", "visible");
 				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
 			});
 	});
 	
@@ -294,6 +327,8 @@ function MyApp(){
 				$("#answer").css("visibility", "hidden");
 				$("#getAnswer").css("visibility", "visible");
 				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
 			});
 	});
 	
@@ -311,6 +346,8 @@ function MyApp(){
 				$("#answer").css("visibility", "hidden");
 				$("#getAnswer").css("visibility", "visible");
 				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
 			});
 	});
 	
@@ -328,6 +365,8 @@ function MyApp(){
 				$("#answer").css("visibility", "hidden");
 				$("#getAnswer").css("visibility", "visible");
 				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
 			});
 	});
 	
@@ -345,6 +384,8 @@ function MyApp(){
 				$("#answer").css("visibility", "hidden");
 				$("#getAnswer").css("visibility", "visible");
 				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
 			});
 	});
 	
@@ -362,6 +403,8 @@ function MyApp(){
 				$("#answer").css("visibility", "hidden");
 				$("#getAnswer").css("visibility", "visible");
 				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
 			});
 	})
 //###################MOVIES END#######################
@@ -391,6 +434,8 @@ function MyApp(){
 				$("#answer").css("visibility", "hidden");
 				$("#getAnswer").css("visibility", "visible");
 				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
 			});
 	});
 
@@ -408,6 +453,8 @@ function MyApp(){
 				$("#answer").css("visibility", "hidden");
 				$("#getAnswer").css("visibility", "visible");
 				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
 			});
 	});
 	
@@ -425,6 +472,8 @@ function MyApp(){
 				$("#answer").css("visibility", "hidden");
 				$("#getAnswer").css("visibility", "visible");
 				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
 			});
 	});
 	
@@ -442,6 +491,8 @@ function MyApp(){
 				$("#answer").css("visibility", "hidden");
 				$("#getAnswer").css("visibility", "visible");
 				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
 			});
 	});
 	
@@ -459,6 +510,8 @@ function MyApp(){
 				$("#answer").css("visibility", "hidden");
 				$("#getAnswer").css("visibility", "visible");
 				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
 			});
 	});
 	
@@ -476,6 +529,8 @@ function MyApp(){
 				$("#answer").css("visibility", "hidden");
 				$("#getAnswer").css("visibility", "visible");
 				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
 			});
 	});
 	
@@ -493,6 +548,8 @@ function MyApp(){
 				$("#answer").css("visibility", "hidden");
 				$("#getAnswer").css("visibility", "visible");
 				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
 			});
 	});
 	
@@ -510,6 +567,8 @@ function MyApp(){
 				$("#answer").css("visibility", "hidden");
 				$("#getAnswer").css("visibility", "visible");
 				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
 			});
 	});
 	
@@ -527,6 +586,8 @@ function MyApp(){
 				$("#answer").css("visibility", "hidden");
 				$("#getAnswer").css("visibility", "visible");
 				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
 			});
 	});
 	
@@ -544,13 +605,674 @@ function MyApp(){
 				$("#answer").css("visibility", "hidden");
 				$("#getAnswer").css("visibility", "visible");
 				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
 			});
 	})
 //###################HISTORY END#######################
 
+//###############TELEVISION START##################
+	$(".history").on("click",function(){
+		$.ajax({
+		url: "http://jservice.io/api/clues",
+		data: { category: 67},
+		dataType: "json"})
+		.done(function(data) {
+			console.log(data);
+		});
+	});
+
+	$("#oneHun3").on("click",function(){
+		$("#oneHun3").css("visibility", "hidden");//Hide Value
+		$.ajax({
+		url: "http://jservice.io/api/clues",
+		data: { category: 67, value: 100},
+		dataType: "json"})
+		.done(function(data) {
+			console.log(data);
+				$( "#difficulty" ).text("Points: " + data[0].value + " | Category: " + data[0].category.title);
+				$( "#question" ).text("Question: " + data[0].question);
+				$( "#answer" ).text("Answer: " + data[0].answer);
+				$("#answer").css("visibility", "hidden");
+				$("#getAnswer").css("visibility", "visible");
+				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
+			});
+	});
+
+	$("#twoHun3").on("click",function(){
+		$("#twoHun3").css("visibility", "hidden");//Hide Value
+		$.ajax({
+		url: "http://jservice.io/api/clues",
+		data: { category: 67, value: 200},
+		dataType: "json"})
+		.done(function(data) {
+			console.log(data);
+				$( "#difficulty" ).text("Points: " + data[0].value + " | Category: " + data[0].category.title);
+				$( "#question" ).text("Question: " + data[0].question);
+				$( "#answer" ).text("Answer: " + data[0].answer);
+				$("#answer").css("visibility", "hidden");
+				$("#getAnswer").css("visibility", "visible");
+				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
+			});
+	});
+	
+	$("#threeHun3").on("click",function(){
+		$("#threeHun3").css("visibility", "hidden");//Hide Value
+		$.ajax({
+		url: "http://jservice.io/api/clues",
+		data: { category: 67, value: 300},
+		dataType: "json"})
+		.done(function(data) {
+			console.log(data);
+				$( "#difficulty" ).text("Points: " + data[0].value + " | Category: " + data[0].category.title);
+				$( "#question" ).text("Question: " + data[0].question);
+				$( "#answer" ).text("Answer: " + data[0].answer);
+				$("#answer").css("visibility", "hidden");
+				$("#getAnswer").css("visibility", "visible");
+				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
+			});
+	});
+	
+	$("#fourHun3").on("click",function(){
+		$("#fourHun3").css("visibility", "hidden");//Hide Value
+		$.ajax({
+		url: "http://jservice.io/api/clues",
+		data: { category: 67, value: 400},
+		dataType: "json"})
+		.done(function(data) {
+			console.log(data);
+				$( "#difficulty" ).text("Points: " + data[0].value + " | Category: " + data[0].category.title);
+				$( "#question" ).text("Question: " + data[0].question);
+				$( "#answer" ).text("Answer: " + data[0].answer);
+				$("#answer").css("visibility", "hidden");
+				$("#getAnswer").css("visibility", "visible");
+				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
+			});
+	});
+	
+	$("#fiveHun3").on("click",function(){
+		$("#fiveHun3").css("visibility", "hidden");//Hide Value
+		$.ajax({
+		url: "http://jservice.io/api/clues",
+		data: { category: 67, value: 500},
+		dataType: "json"})
+		.done(function(data) {
+			console.log(data);
+				$( "#difficulty" ).text("Points: " + data[0].value + " | Category: " + data[0].category.title);
+				$( "#question" ).text("Question: " + data[0].question);
+				$( "#answer" ).text("Answer: " + data[0].answer);
+				$("#answer").css("visibility", "hidden");
+				$("#getAnswer").css("visibility", "visible");
+				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
+			});
+	});
+	
+	$("#sixHun3").on("click",function(){
+		$("#sixHun3").css("visibility", "hidden");//Hide Value
+		$.ajax({
+		url: "http://jservice.io/api/clues",
+		data: { category: 67, value: 600},
+		dataType: "json"})
+		.done(function(data) {
+			console.log(data);
+				$( "#difficulty" ).text("Points: " + data[0].value + " | Category: " + data[0].category.title);
+				$( "#question" ).text("Question: " + data[0].question);
+				$( "#answer" ).text("Answer: " + data[0].answer);
+				$("#answer").css("visibility", "hidden");
+				$("#getAnswer").css("visibility", "visible");
+				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
+			});
+	});
+	
+	$("#sevenHun3").on("click",function(){
+		$("#sevenHun3").css("visibility", "hidden");//Hide Value
+		$.ajax({
+		url: "http://jservice.io/api/clues",
+		data: { category: 67, value: 700},
+		dataType: "json"})
+		.done(function(data) {
+			console.log(data);
+				$( "#difficulty" ).text("Points: " + data[0].value + " | Category: " + data[0].category.title);
+				$( "#question" ).text("Question: " + data[0].question);
+				$( "#answer" ).text("Answer: " + data[0].answer);
+				$("#answer").css("visibility", "hidden");
+				$("#getAnswer").css("visibility", "visible");
+				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
+			});
+	});
+	
+	$("#eightHun3").on("click",function(){
+		$("#eightHun3").css("visibility", "hidden");//Hide Value
+		$.ajax({
+		url: "http://jservice.io/api/clues",
+		data: { category: 67, value: 800},
+		dataType: "json"})
+		.done(function(data) {
+			console.log(data);
+				$( "#difficulty" ).text("Points: " + data[0].value + " | Category: " + data[0].category.title);
+				$( "#question" ).text("Question: " + data[0].question);
+				$( "#answer" ).text("Answer: " + data[0].answer);
+				$("#answer").css("visibility", "hidden");
+				$("#getAnswer").css("visibility", "visible");
+				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
+			});
+	});
+	
+	$("#nineHun3").on("click",function(){
+		$("#nineHun3").css("visibility", "hidden");//Hide Value
+		$.ajax({
+		url: "http://jservice.io/api/clues",
+		data: { category: 67, value: 900},
+		dataType: "json"})
+		.done(function(data) {
+			console.log(data);
+				$( "#difficulty" ).text("Points: " + data[0].value + " | Category: " + data[0].category.title);
+				$( "#question" ).text("Question: " + data[0].question);
+				$( "#answer" ).text("Answer: " + data[0].answer);
+				$("#answer").css("visibility", "hidden");
+				$("#getAnswer").css("visibility", "visible");
+				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
+			});
+	});
+	
+	$("#thousand3").on("click",function(){
+		$("#thousand3").css("visibility", "hidden");//Hide Value
+		$.ajax({
+		url: "http://jservice.io/api/clues",
+		data: { category: 67, value: 1000},
+		dataType: "json"})
+		.done(function(data) {
+			console.log(data);
+				$( "#difficulty" ).text("Points: " + data[0].value + " | Category: " + data[0].category.title);
+				$( "#question" ).text("Question: " + data[0].question);
+				$( "#answer" ).text("Answer: " + data[0].answer);
+				$("#answer").css("visibility", "hidden");
+				$("#getAnswer").css("visibility", "visible");
+				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
+			});
+	})
+//###################TELEVISION END#######################
+
+//###############TRIVIA START##################
+	$(".history").on("click",function(){
+		$.ajax({
+		url: "http://jservice.io/api/clues",
+		data: { category: 11},
+		dataType: "json"})
+		.done(function(data) {
+			console.log(data);
+		});
+	});
+
+	$("#oneHun4").on("click",function(){
+		$("#oneHun4").css("visibility", "hidden");//Hide Value
+		$.ajax({
+		url: "http://jservice.io/api/clues",
+		data: { category: 11, value: 100},
+		dataType: "json"})
+		.done(function(data) {
+			console.log(data);
+				$( "#difficulty" ).text("Points: " + data[0].value + " | Category: " + data[0].category.title);
+				$( "#question" ).text("Question: " + data[0].question);
+				$( "#answer" ).text("Answer: " + data[0].answer);
+				$("#answer").css("visibility", "hidden");
+				$("#getAnswer").css("visibility", "visible");
+				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
+			});
+	});
+
+	$("#twoHun4").on("click",function(){
+		$("#twoHun4").css("visibility", "hidden");//Hide Value
+		$.ajax({
+		url: "http://jservice.io/api/clues",
+		data: { category: 11, value: 200},
+		dataType: "json"})
+		.done(function(data) {
+			console.log(data);
+				$( "#difficulty" ).text("Points: " + data[0].value + " | Category: " + data[0].category.title);
+				$( "#question" ).text("Question: " + data[0].question);
+				$( "#answer" ).text("Answer: " + data[0].answer);
+				$("#answer").css("visibility", "hidden");
+				$("#getAnswer").css("visibility", "visible");
+				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
+			});
+	});
+	
+	$("#threeHun4").on("click",function(){
+		$("#threeHun4").css("visibility", "hidden");//Hide Value
+		$.ajax({
+		url: "http://jservice.io/api/clues",
+		data: { category: 11, value: 300},
+		dataType: "json"})
+		.done(function(data) {
+			console.log(data);
+				$( "#difficulty" ).text("Points: " + data[0].value + " | Category: " + data[0].category.title);
+				$( "#question" ).text("Question: " + data[0].question);
+				$( "#answer" ).text("Answer: " + data[0].answer);
+				$("#answer").css("visibility", "hidden");
+				$("#getAnswer").css("visibility", "visible");
+				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
+			});
+	});
+	
+	$("#fourHun4").on("click",function(){
+		$("#fourHun4").css("visibility", "hidden");//Hide Value
+		$.ajax({
+		url: "http://jservice.io/api/clues",
+		data: { category: 11, value: 400},
+		dataType: "json"})
+		.done(function(data) {
+			console.log(data);
+				$( "#difficulty" ).text("Points: " + data[0].value + " | Category: " + data[0].category.title);
+				$( "#question" ).text("Question: " + data[0].question);
+				$( "#answer" ).text("Answer: " + data[0].answer);
+				$("#answer").css("visibility", "hidden");
+				$("#getAnswer").css("visibility", "visible");
+				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
+			});
+	});
+	
+	$("#fiveHun4").on("click",function(){
+		$("#fiveHun4").css("visibility", "hidden");//Hide Value
+		$.ajax({
+		url: "http://jservice.io/api/clues",
+		data: { category: 11, value: 500},
+		dataType: "json"})
+		.done(function(data) {
+			console.log(data);
+				$( "#difficulty" ).text("Points: " + data[0].value + " | Category: " + data[0].category.title);
+				$( "#question" ).text("Question: " + data[0].question);
+				$( "#answer" ).text("Answer: " + data[0].answer);
+				$("#answer").css("visibility", "hidden");
+				$("#getAnswer").css("visibility", "visible");
+				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
+			});
+	});
+	
+	$("#sixHun4").on("click",function(){
+		$("#sixHun4").css("visibility", "hidden");//Hide Value
+		$.ajax({
+		url: "http://jservice.io/api/clues",
+		data: { category: 11, value: 600},
+		dataType: "json"})
+		.done(function(data) {
+			console.log(data);
+				$( "#difficulty" ).text("Points: " + data[0].value + " | Category: " + data[0].category.title);
+				$( "#question" ).text("Question: " + data[0].question);
+				$( "#answer" ).text("Answer: " + data[0].answer);
+				$("#answer").css("visibility", "hidden");
+				$("#getAnswer").css("visibility", "visible");
+				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
+			});
+	});
+	
+	$("#sevenHun4").on("click",function(){
+		$("#sevenHun4").css("visibility", "hidden");//Hide Value
+		$.ajax({
+		url: "http://jservice.io/api/clues",
+		data: { category: 11, value: 700},
+		dataType: "json"})
+		.done(function(data) {
+			console.log(data);
+				$( "#difficulty" ).text("Points: " + data[0].value + " | Category: " + data[0].category.title);
+				$( "#question" ).text("Question: " + data[0].question);
+				$( "#answer" ).text("Answer: " + data[0].answer);
+				$("#answer").css("visibility", "hidden");
+				$("#getAnswer").css("visibility", "visible");
+				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
+			});
+	});
+	
+	$("#eightHun4").on("click",function(){
+		$("#eightHun4").css("visibility", "hidden");//Hide Value
+		$.ajax({
+		url: "http://jservice.io/api/clues",
+		data: { category: 11, value: 800},
+		dataType: "json"})
+		.done(function(data) {
+			console.log(data);
+				$( "#difficulty" ).text("Points: " + data[0].value + " | Category: " + data[0].category.title);
+				$( "#question" ).text("Question: " + data[0].question);
+				$( "#answer" ).text("Answer: " + data[0].answer);
+				$("#answer").css("visibility", "hidden");
+				$("#getAnswer").css("visibility", "visible");
+				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
+			});
+	});
+	
+	$("#nineHun4").on("click",function(){
+		$("#nineHun4").css("visibility", "hidden");//Hide Value
+		$.ajax({
+		url: "http://jservice.io/api/clues",
+		data: { category: 11, value: 900},
+		dataType: "json"})
+		.done(function(data) {
+			console.log(data);
+				$( "#difficulty" ).text("Points: " + data[0].value + " | Category: " + data[0].category.title);
+				$( "#question" ).text("Question: " + data[0].question);
+				$( "#answer" ).text("Answer: " + data[0].answer);
+				$("#answer").css("visibility", "hidden");
+				$("#getAnswer").css("visibility", "visible");
+				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
+			});
+	});
+	
+	$("#thousand4").on("click",function(){
+		$("#thousand4").css("visibility", "hidden");//Hide Value
+		$.ajax({
+		url: "http://jservice.io/api/clues",
+		data: { category: 11, value: 1000},
+		dataType: "json"})
+		.done(function(data) {
+			console.log(data);
+				$( "#difficulty" ).text("Points: " + data[0].value + " | Category: " + data[0].category.title);
+				$( "#question" ).text("Question: " + data[0].question);
+				$( "#answer" ).text("Answer: " + data[0].answer);
+				$("#answer").css("visibility", "hidden");
+				$("#getAnswer").css("visibility", "visible");
+				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
+			});
+	})
+//###################TRIVIA END#######################
+
+//###############FOOD START##################
+	$(".history").on("click",function(){
+		$.ajax({
+		url: "http://jservice.io/api/clues",
+		data: { category: 49},
+		dataType: "json"})
+		.done(function(data) {
+			console.log(data);
+		});
+	});
+
+	$("#oneHun5").on("click",function(){
+		$("#oneHun5").css("visibility", "hidden");//Hide Value
+		$.ajax({
+		url: "http://jservice.io/api/clues",
+		data: { category: 49, value: 100},
+		dataType: "json"})
+		.done(function(data) {
+			console.log(data);
+				$( "#difficulty" ).text("Points: " + data[0].value + " | Category: " + data[0].category.title);
+				$( "#question" ).text("Question: " + data[0].question);
+				$( "#answer" ).text("Answer: " + data[0].answer);
+				$("#answer").css("visibility", "hidden");
+				$("#getAnswer").css("visibility", "visible");
+				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
+			});
+	});
+
+	$("#twoHun5").on("click",function(){
+		$("#twoHun5").css("visibility", "hidden");//Hide Value
+		$.ajax({
+		url: "http://jservice.io/api/clues",
+		data: { category: 49, value: 200},
+		dataType: "json"})
+		.done(function(data) {
+			console.log(data);
+				$( "#difficulty" ).text("Points: " + data[0].value + " | Category: " + data[0].category.title);
+				$( "#question" ).text("Question: " + data[0].question);
+				$( "#answer" ).text("Answer: " + data[0].answer);
+				$("#answer").css("visibility", "hidden");
+				$("#getAnswer").css("visibility", "visible");
+				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
+			});
+	});
+	
+	$("#threeHun5").on("click",function(){
+		$("#threeHun5").css("visibility", "hidden");//Hide Value
+		$.ajax({
+		url: "http://jservice.io/api/clues",
+		data: { category: 49, value: 300},
+		dataType: "json"})
+		.done(function(data) {
+			console.log(data);
+				$( "#difficulty" ).text("Points: " + data[0].value + " | Category: " + data[0].category.title);
+				$( "#question" ).text("Question: " + data[0].question);
+				$( "#answer" ).text("Answer: " + data[0].answer);
+				$("#answer").css("visibility", "hidden");
+				$("#getAnswer").css("visibility", "visible");
+				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
+			});
+	});
+	
+	$("#fourHun5").on("click",function(){
+		$("#fourHun5").css("visibility", "hidden");//Hide Value
+		$.ajax({
+		url: "http://jservice.io/api/clues",
+		data: { category: 49, value: 400},
+		dataType: "json"})
+		.done(function(data) {
+			console.log(data);
+				$( "#difficulty" ).text("Points: " + data[0].value + " | Category: " + data[0].category.title);
+				$( "#question" ).text("Question: " + data[0].question);
+				$( "#answer" ).text("Answer: " + data[0].answer);
+				$("#answer").css("visibility", "hidden");
+				$("#getAnswer").css("visibility", "visible");
+				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
+			});
+	});
+	
+	$("#fiveHun5").on("click",function(){
+		$("#fiveHun5").css("visibility", "hidden");//Hide Value
+		$.ajax({
+		url: "http://jservice.io/api/clues",
+		data: { category: 49, value: 500},
+		dataType: "json"})
+		.done(function(data) {
+			console.log(data);
+				$( "#difficulty" ).text("Points: " + data[0].value + " | Category: " + data[0].category.title);
+				$( "#question" ).text("Question: " + data[0].question);
+				$( "#answer" ).text("Answer: " + data[0].answer);
+				$("#answer").css("visibility", "hidden");
+				$("#getAnswer").css("visibility", "visible");
+				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
+			});
+	});
+	
+	$("#sixHun5").on("click",function(){
+		$("#sixHun5").css("visibility", "hidden");//Hide Value
+		$.ajax({
+		url: "http://jservice.io/api/clues",
+		data: { category: 49, value: 600},
+		dataType: "json"})
+		.done(function(data) {
+			console.log(data);
+				$( "#difficulty" ).text("Points: " + data[0].value + " | Category: " + data[0].category.title);
+				$( "#question" ).text("Question: " + data[0].question);
+				$( "#answer" ).text("Answer: " + data[0].answer);
+				$("#answer").css("visibility", "hidden");
+				$("#getAnswer").css("visibility", "visible");
+				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
+			});
+	});
+	
+	$("#sevenHun5").on("click",function(){
+		$("#sevenHun5").css("visibility", "hidden");//Hide Value
+		$.ajax({
+		url: "http://jservice.io/api/clues",
+		data: { category: 49, value: 700},
+		dataType: "json"})
+		.done(function(data) {
+			console.log(data);
+				$( "#difficulty" ).text("Points: " + data[0].value + " | Category: " + data[0].category.title);
+				$( "#question" ).text("Question: " + data[0].question);
+				$( "#answer" ).text("Answer: " + data[0].answer);
+				$("#answer").css("visibility", "hidden");
+				$("#getAnswer").css("visibility", "visible");
+				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
+			});
+	});
+	
+	$("#eightHun5").on("click",function(){
+		$("#eightHun5").css("visibility", "hidden");//Hide Value
+		$.ajax({
+		url: "http://jservice.io/api/clues",
+		data: { category: 49, value: 800},
+		dataType: "json"})
+		.done(function(data) {
+			console.log(data);
+				$( "#difficulty" ).text("Points: " + data[0].value + " | Category: " + data[0].category.title);
+				$( "#question" ).text("Question: " + data[0].question);
+				$( "#answer" ).text("Answer: " + data[0].answer);
+				$("#answer").css("visibility", "hidden");
+				$("#getAnswer").css("visibility", "visible");
+				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
+			});
+	});
+	
+	$("#nineHun5").on("click",function(){
+		$("#nineHun5").css("visibility", "hidden");//Hide Value
+		$.ajax({
+		url: "http://jservice.io/api/clues",
+		data: { category: 49, value: 900},
+		dataType: "json"})
+		.done(function(data) {
+			console.log(data);
+				$( "#difficulty" ).text("Points: " + data[0].value + " | Category: " + data[0].category.title);
+				$( "#question" ).text("Question: " + data[0].question);
+				$( "#answer" ).text("Answer: " + data[0].answer);
+				$("#answer").css("visibility", "hidden");
+				$("#getAnswer").css("visibility", "visible");
+				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
+			});
+	});
+	
+	$("#thousand5").on("click",function(){
+		$("#thousand5").css("visibility", "hidden");//Hide Value
+		$.ajax({
+		url: "http://jservice.io/api/clues",
+		data: { category: 49, value: 1000},
+		dataType: "json"})
+		.done(function(data) {
+			console.log(data);
+				$( "#difficulty" ).text("Points: " + data[0].value + " | Category: " + data[0].category.title);
+				$( "#question" ).text("Question: " + data[0].question);
+				$( "#answer" ).text("Answer: " + data[0].answer);
+				$("#answer").css("visibility", "hidden");
+				$("#getAnswer").css("visibility", "visible");
+				$("#error").css("visibility", "hidden");
+				$("#decision").css("visibility", "visible");
+				money = data[0].value;
+			});
+	})
+//###################FOOD END#######################
+
 	$("#getAnswer").on("click",function(){
 			$('#answer').css("visibility", "visible");
 	});
+			
+	$('input.radios').on('change', function() {
+		$('input.radios').not(this).prop('checked', false); 
+	});
+	
+	$('input.radios').on('change', function() {
+		$('input.radios').not(this).prop('checked', false); 
+	});
+	
+	$('input.radios').on('change', function() {
+		$('input.radios').not(this).prop('checked', false); 
+	});
+	
+	//CORRECT ANSWER
+	$("#close").on("click",function(){
+			$('#decision').css("visibility", "hidden");
+			console.log("CORRECT: " + money);
+			
+		if($('#radioOne').is(':checked')) {
+			$('#oneScore').html(parseInt($('#oneScore').html(), 10)+money);
+		}
+		
+		if($('#radioTwo').is(':checked')) {
+			$('#twoScore').html(parseInt($('#twoScore').html(), 10)+money);
+		}
+		
+		if($('#radioThree').is(':checked')) {
+			$('#threeScore').html(parseInt($('#threeScore').html(), 10)+money);
+		}
+
+	});
+	
+	//Unchecks all Players After Incorrect Resonse
+	$("#wrong").on("click",function(){
+		
+		console.log("INCORRECT");
+		if($('#radioOne').is(':checked')) {
+			$('#radioOne').prop('checked', false);
+		}
+		
+		else if($('#radioTwo').is(':checked')) {
+			$('#radioTwo').prop('checked', false);
+		}
+		
+		else if($('#radioThree').is(':checked')) {
+			$('#radioThree').prop('checked', false);
+		}
+
+		else {
+			$('#decision').css("visibility", "hidden");	
+		}
+	});
+	
 }//end myApp
 
 window.onload = function(){

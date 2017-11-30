@@ -6,35 +6,40 @@
 		<script src="lib/jquery-3.2.1.min.js"></script>
 		<script src="game.js"></script>
 	</head>
-	
+	<!-- OH BOY -->
 	<body>
 		<header>JEOPARDY!</header>
 			<p id="subHead">CONCORD'S FAVORITE QUIZ SHOW</p>
 				<div id="game">
 						<button class="sports">Sports</button><button class="movies">Movies</button><button class="history">History</button><button class="television">Television</button><button class="trivia">Trivia</button><button class="food">Food</button><br/><br/>
-						<button id="oneHun">$100</button><button id="oneHun1">$100</button><button id="oneHun2">$100</button><br/>	
-						<button id="twoHun">$200</button><button id="twoHun1">$200</button><button id="twoHun2">$200</button><br/>
-						<button id="threeHun">$300</button><button id="threeHun1">$300</button><button id="threeHun2">$300</button><br/>
-						<button id="fourHun">$400</button><button id="fourHun1">$400</button><button id="fourHun2">$400</button><br/>
-						<button id="fiveHun">$500</button><button id="fiveHun1">$500</button><button id="fiveHun2">$500</button><br/>
-						<button id="sixHun">$600</button><button id="sixHun1">$600</button><button id="sixHun2">$600</button><br/>
-						<button id="sevenHun">$700</button><button id="sevenHun1">$700</button><button id="sevenHun2">$700</button><br/>
-						<button id="eightHun">$800</button><button id="eightHun1">$800</button><button id="eightHun2">$800</button><br/>
-						<button id="nineHun">$900</button><button id="nineHun1">$900</button><button id="nineHun2">$900</button><br/>
-						<button id="thousand">$1000</button><button id="thousand1">$1000</button><button id="thousand2">$1000</button>					
+						<button id="oneHun">$100</button><button id="oneHun1">$100</button><button id="oneHun2">$100</button><button id="oneHun3">$100</button><button id="oneHun4">$100</button><button id="oneHun5">$100</button><br/>	
+						<button id="twoHun">$200</button><button id="twoHun1">$200</button><button id="twoHun2">$200</button><button id="twoHun3">$200</button><button id="twoHun4">$200</button><button id="twoHun5">$200</button><br/>
+						<button id="threeHun">$300</button><button id="threeHun1">$300</button><button id="threeHun2">$300</button><button id="threeHun3">$300</button><button id="threeHun4">$300</button><button id="threeHun5">$300</button><br/>
+						<button id="fourHun">$400</button><button id="fourHun1">$400</button><button id="fourHun2">$400</button><button id="fourHun3">$400</button><button id="fourHun4">$400</button><button id="fourHun5">$400</button><br/>
+						<button id="fiveHun">$500</button><button id="fiveHun1">$500</button><button id="fiveHun2">$500</button><button id="fiveHun3">$500</button><button id="fiveHun4">$500</button><button id="fiveHun5">$500</button><br/>
+						<button id="sixHun">$600</button><button id="sixHun1">$600</button><button id="sixHun2">$600</button><button id="sixHun3">$600</button><button id="sixHun4">$600</button><button id="sixHun5">$600</button><br/>
+						<button id="sevenHun">$700</button><button id="sevenHun1">$700</button><button id="sevenHun2">$700</button><button id="sevenHun3">$700</button><button id="sevenHun4">$700</button><button id="sevenHun5">$700</button><br/>
+						<button id="eightHun">$800</button><button id="eightHun1">$800</button><button id="eightHun2">$800</button><button id="eightHun3">$800</button><button id="eightHun4">$800</button><button id="eightHun5">$800</button><br/>
+						<button id="nineHun">$900</button><button id="nineHun1">$900</button><button id="nineHun2">$900</button><button id="nineHun3">$900</button><button id="nineHun4">$900</button><button id="nineHun5">$900</button><br/>
+						<button id="thousand">$1000</button><button id="thousand1">$1000</button><button id="thousand2">$1000</button><button id="thousand3">$1000</button><button id="thousand4">$1000</button><button id="thousand5">$1000</button>				
 						
 						<p id="question">Question:</p>
 						<p id="difficulty">Points: | Category:</p>
 						<p id="date"></p>
 						<button id="getAnswer">Show Answer</button>
-						<p id="answer"></p><br/>
+						<p id="answer"><br/>
 						
+						<!--
 						<div id="playerOne">
 						Player One: <input type="text" name="playerOne"><button id="guyOne">Submit</button><br/><span id="pOne"></span>
 						</div><br/>
 						<div id="playerTwo">
 						Player Two: <input type="text" name="playerTwo"><button id="guyTwo">Submit</button><span id="pTwo"></span>
-						</div><br/>				
+						</div><br/>
+						<div id="playerThree">
+						Player Three: <input type="radio" id="radioButton"></span>
+						</div><br/>	
+						-->
 
 						<div id="decision">
 						<button id="close">Close Enough/Correct</button>
@@ -42,8 +47,9 @@
 						</div>
 						
 						<div id="scores">
-						Player One: <span id="oneScore"></span><br/>
-						Player Two: <span id="twoScore"></span>
+						<input type="checkbox" id="radioOne" class="radios" checked=checked>Player One: $<span id="oneScore">0</span><br/>
+						<input type="checkbox" id="radioTwo" class="radios">Player Two: $<span id="twoScore">0</span><br/>
+						<input type="checkbox" id="radioThree" class="radios">Player Three: $<span id="threeScore">0</span>
 						</div>
 				</div>
 				<div id="error" style="visibility: hidden;" ></div>
