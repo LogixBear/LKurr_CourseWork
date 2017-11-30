@@ -1217,6 +1217,20 @@ function MyApp(){
 	})
 //###################FOOD END#######################
 
+	$('body').on('click', '[data-editable]', function(){
+	  var $el = $(this);
+				  
+	  var $input = $('<input/>').val( $el.text() );
+	  $el.replaceWith( $input );
+	  
+	  var save = function(){
+		var $p = $('<span data-editable />').text( $input.val() );
+		$input.replaceWith( $p );
+	  };
+	  
+	  $input.one('blur', save).focus(); //Hides input
+	});
+
 	$("#getAnswer").on("click",function(){
 			$('#answer').css("visibility", "visible");
 	});
