@@ -1,11 +1,16 @@
 body {
 	margin: auto;
 	text-align: center;
+	font-size: 100%;
+}
+
+html {
+	min-height: 100%;
 	background-color: #333333;
-    background: -webkit-linear-gradient(#333333,#333333, #ffbf80); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#333333,#333333, #ffbf80); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#333333,#333333, #ffbf80); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(6#333333,#333333, #ffbf80); /* Standard syntax */
+    background: -webkit-linear-gradient(#333333, #333333,#ffbf80); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#333333, #333333, #ffbf80); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#333333, #333333, #ffbf80); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(6#333333, #333333, #ffbf80); /* Standard syntax */
 }
 
 header {
@@ -24,18 +29,6 @@ header {
 #game {
 	color:  #f2f2f2;
 }
-#error {
-	color: red;
-	visibility: hidden;
-}
-
-#footer {
-   position: fixed;
-   left: 20px;
-   bottom: 0;
-   color: #f2f2f2;
-   text-align: center;
-}
 
 button.sports, button.movies, button.history, button.television, button.trivia, button.food{
 	background:none;
@@ -43,16 +36,20 @@ button.sports, button.movies, button.history, button.television, button.trivia, 
 	color:  #f2f2f2;
 	}
 
+#board {
+	
+}
 
 #oneHun, #twoHun, #threeHun, #fourHun, #fiveHun, #sixHun, #sevenHun, #eightHun, #nineHun, #thousand, #oneHun1, #twoHun1, #threeHun1, #fourHun1, #fiveHun1, #sixHun1, #sevenHun1, #eightHun1, #nineHun1, #thousand1, #oneHun2, #twoHun2, #threeHun2, #fourHun2, #fiveHun2, #sixHun2, #sevenHun2, #eightHun2, #nineHun2, #thousand2,#oneHun3, #twoHun3, #threeHun3, #fourHun3, #fiveHun3, #sixHun3, #sevenHun3, #eightHun3, #nineHun3, #thousand3,#oneHun4, #twoHun4, #threeHun4, #fourHun4, #fiveHun4, #sixHun4, #sevenHun4, #eightHun4, #nineHun4, #thousand4,#oneHun5, #twoHun5, #threeHun5, #fourHun5, #fiveHun5, #sixHun5, #sevenHun5, #eightHun5, #nineHun5, #thousand5{
 	visibility: visible;
 	background: none;
 	color:  #f2f2f2;
-	width: 65px;
-	height: 30px;
-	border: 2px solid white; /* Green */
-    -webkit-transition-duration: 0.3s; /* Safari */
+	width: 80px;
+	height: 40px;
+	border: 2px solid white;
+    -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
+	font-size: 1.3em;
 }
 
 #oneHun:hover, #twoHun:hover, #threeHun:hover, #fourHun:hover, #fiveHun:hover, #sixHun:hover, #sevenHun:hover, #eightHun:hover, #nineHun:hover, #thousand:hover, #oneHun1:hover, #twoHun1:hover, #threeHun1:hover, #fourHun1:hover, #fiveHun1:hover, #sixHun1:hover, #sevenHun1:hover, #eightHun1:hover, #nineHun1:hover, #thousand1:hover, #oneHun2:hover, #twoHun2:hover, #threeHun2:hover, #fourHun2:hover, #fiveHun2:hover, #sixHun2:hover, #sevenHun2:hover, #eightHun2:hover, #nineHun2:hover, #thousand2:hover,#oneHun3:hover, #twoHun3:hover, #threeHun3:hover, #fourHun3:hover, #fiveHun3:hover, #sixHun3:hover, #sevenHun3:hover, #eightHun3:hover, #nineHun3:hover, #thousand3:hover,#oneHun4:hover, #twoHun4:hover, #threeHun4:hover, #fourHun4:hover, #fiveHun4:hover, #sixHun4:hover, #sevenHun4:hover, #eightHun4:hover, #nineHun4:hover, #thousand4:hover,#oneHun5:hover, #twoHun5:hover, #threeHun5:hover, #fourHun5:hover, #fiveHun5:hover, #sixHun5:hover, #sevenHun5:hover, #eightHun5:hover, #nineHun5:hover, #thousand5:hover{
@@ -72,4 +69,59 @@ button.sports, button.movies, button.history, button.television, button.trivia, 
 
 #decision {
 	visibility: hidden;
+}
+
+#error {
+	color: red;
+	visibility: hidden;
+}
+
+#footer {
+   position: fixed;
+   left: 20px;
+   bottom: 0;
+   color: #333333;
+   text-align: center;
+}
+
+#scoreBoard {
+	float: right;
+    width: 50%;
+	margin: auto;
+}
+
+#firstScore {
+	display:inline;
+	float: left;
+}
+
+#secondScore {
+	display:inline;
+	float: left;
+}
+
+#thirdScore {
+	display:inline;
+	float: left;
+}
+
+#instruct {
+	position: absolute;
+    left: 17px;
+	text-align: left;
+	bottom: 50px;
+	color: #333333;
+	border: 3px solid white;
+	padding: 10px;
+	background-color: #e6e6e6;
+}
+
+#intHead {
+	font-size: 2em;
+	font-family: "Georgia", serif;
+	font-weight: bold;
+}
+
+#disclaimer {
+	font-style: italic;
 }
