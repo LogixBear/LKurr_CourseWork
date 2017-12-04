@@ -13,58 +13,147 @@ html {
     background: linear-gradient(6#333333, #333333, #ffbf80); /* Standard syntax */
 }
 
-header {
-	font-size: 40px;
-	color: #ffbf80;
-}
-#subHead {
-	font-size: 20px;
-	color: #ffe6cc;
+#pictureLeft {
+	position: fixed;
+	left: 20px;
+	top: 100px;
+	-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    animation-name: leftSide;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 
-#answer, #getAnswer {
-    visibility: hidden;
+#pictureRight {
+	position: fixed;
+	right: 20px;
+	top: 100px;
+	-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    animation-name: rightSide;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes leftSide {
+    0%   {left:20px; top:100px;}
+    25%  {left:350px; top:500px;}
+    50%  {left:20px; top:500px;}
+    75%  {left:350px; top:100px;}
+    100% {left:20px; top:100px;}
+}
+
+@keyframes rightSide {
+    0%   {right:20px; top:100px;}
+    25%  {right:350px; top:500px;}
+    50%  {right:20px; top:500px;}
+    75%  {right:350px; top:100px;}
+    100% {right:20px; top:100px;}
+}
+
+header {
+	font-size: 3em;
+	color: #ffbf80;
+	font-weight: bold;
+	font-family: "Arial Black", Gadget, sans-serif;
+	box-shadow: 10px 10px;
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+#subHead {
+	font-size: 1.3em;
+	color: #ffe6cc;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#difficulty {
+	font-style: italic;
+}
+
+#question {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 1.2em;
+	animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+
+#answer{
+    
+}
+
+#getAnswer {
+	visibility: hidden;
+	border: 2px dashed black;
+	background-color: #e2d53f;
+}
+
+#getAnswer:hover {
+	background-color: #8e8626;
 }
 
 #game {
 	color:  #f2f2f2;
 }
 
-button.sports, button.movies, button.history, button.television, button.trivia, button.food{
-	background:none;
-	border:none; 
-	color:  #f2f2f2;
-	}
-
 #board {
-	
+	border: 2px solid white;
+	width: 540px;
+	margin: auto;
+}
+
+.sports, .movies, .history, .television, .trivia, .food{
+	font-size: 1.1em;
+	background:none;
+	border: 2px solid white;
+	width: 90px;
+	height: 45px;
+	background-color: #e6e6e6;
+	color: #333333;
 }
 
 #oneHun, #twoHun, #threeHun, #fourHun, #fiveHun, #sixHun, #sevenHun, #eightHun, #nineHun, #thousand, #oneHun1, #twoHun1, #threeHun1, #fourHun1, #fiveHun1, #sixHun1, #sevenHun1, #eightHun1, #nineHun1, #thousand1, #oneHun2, #twoHun2, #threeHun2, #fourHun2, #fiveHun2, #sixHun2, #sevenHun2, #eightHun2, #nineHun2, #thousand2,#oneHun3, #twoHun3, #threeHun3, #fourHun3, #fiveHun3, #sixHun3, #sevenHun3, #eightHun3, #nineHun3, #thousand3,#oneHun4, #twoHun4, #threeHun4, #fourHun4, #fiveHun4, #sixHun4, #sevenHun4, #eightHun4, #nineHun4, #thousand4,#oneHun5, #twoHun5, #threeHun5, #fourHun5, #fiveHun5, #sixHun5, #sevenHun5, #eightHun5, #nineHun5, #thousand5{
 	visibility: visible;
 	background: none;
 	color:  #f2f2f2;
-	width: 80px;
-	height: 40px;
+	width: 90px;
+	height: 45px;
 	border: 2px solid white;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
 	font-size: 1.3em;
+	text-shadow: 1px 1px #ffbf80;
 }
 
 #oneHun:hover, #twoHun:hover, #threeHun:hover, #fourHun:hover, #fiveHun:hover, #sixHun:hover, #sevenHun:hover, #eightHun:hover, #nineHun:hover, #thousand:hover, #oneHun1:hover, #twoHun1:hover, #threeHun1:hover, #fourHun1:hover, #fiveHun1:hover, #sixHun1:hover, #sevenHun1:hover, #eightHun1:hover, #nineHun1:hover, #thousand1:hover, #oneHun2:hover, #twoHun2:hover, #threeHun2:hover, #fourHun2:hover, #fiveHun2:hover, #sixHun2:hover, #sevenHun2:hover, #eightHun2:hover, #nineHun2:hover, #thousand2:hover,#oneHun3:hover, #twoHun3:hover, #threeHun3:hover, #fourHun3:hover, #fiveHun3:hover, #sixHun3:hover, #sevenHun3:hover, #eightHun3:hover, #nineHun3:hover, #thousand3:hover,#oneHun4:hover, #twoHun4:hover, #threeHun4:hover, #fourHun4:hover, #fiveHun4:hover, #sixHun4:hover, #sevenHun4:hover, #eightHun4:hover, #nineHun4:hover, #thousand4:hover,#oneHun5:hover, #twoHun5:hover, #threeHun5:hover, #fourHun5:hover, #fiveHun5:hover, #sixHun5:hover, #sevenHun5:hover, #eightHun5:hover, #nineHun5:hover, #thousand5:hover{
     background-color: #ffbf80;
     color: #333333;
+	text-shadow: 1px 1px white;
 }
 
 #close {
 	border-radius: 0px 0px 0px 15px;
 	height: 30px;
+	background-color: #54b754;
+	border: none;
+}
+
+#close:hover{
+	background-color: #449144;
+}
+
+#wrong:hover{
+	background-color: #9b1a1a;
 }
 
 #wrong {
 	border-radius: 0px 0px 15px 0px;
 	height: 30px;
+	background-color: #e02626;
+	border: none;
+	margin-left: 10px;
 }
 
 #decision {
@@ -85,24 +174,50 @@ button.sports, button.movies, button.history, button.television, button.trivia, 
 }
 
 #scoreBoard {
-	float: right;
-    width: 50%;
-	margin: auto;
+	position: fixed;
+	right: 100px;
+	bottom: 100px;
 }
 
 #firstScore {
 	display:inline;
 	float: left;
+	padding: 10px;
+	border: 3px solid white;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-right: 5px;
+	width: 200px;
 }
 
 #secondScore {
 	display:inline;
 	float: left;
+	padding: 10px;
+	border: 3px solid white;
+	font-size: 1.5em;
+	font-weight: bold;
+	width: 200px;
 }
 
 #thirdScore {
 	display:inline;
 	float: left;
+	padding: 10px;
+	border: 3px solid white;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-left: 5px;
+	width: 200px;
+}
+
+#oneScore, #twoScore, #threeScore {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+#name1, #name2, #name3 {
+	font-size: 1.2em;
 }
 
 #instruct {

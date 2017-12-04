@@ -11,8 +11,10 @@
 		<header>JEOPARDY!</header>
 			<p id="subHead">CONCORD'S FAVORITE QUIZ SHOW</p>
 				<div id="game">
+				<span id="pictureLeft"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Question-mark-blackandwhite.png" style="width:128px;height:128px;"></span>
+				<span id="pictureRight"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Question-mark-blackandwhite.png" style="width:128px;height:128px;"></span>
 					<div id="board">
-						<button class="sports">Sports</button><button class="movies">Movies</button><button class="history">History</button><button class="television">Television</button><button class="trivia">Trivia</button><button class="food">Food</button><br/><br/>
+						<button class="sports">Sports</button><button class="movies">Movies</button><button class="history">History</button><button class="television">Television</button><button class="trivia">Potpourrii</button><button class="food">Food</button><br/>
 						<button id="oneHun">$100</button><button id="oneHun1">$100</button><button id="oneHun2">$100</button><button id="oneHun3">$100</button><button id="oneHun4">$100</button><button id="oneHun5">$100</button><br/>	
 						<button id="twoHun">$200</button><button id="twoHun1">$200</button><button id="twoHun2">$200</button><button id="twoHun3">$200</button><button id="twoHun4">$200</button><button id="twoHun5">$200</button><br/>
 						<button id="threeHun">$300</button><button id="threeHun1">$300</button><button id="threeHun2">$300</button><button id="threeHun3">$300</button><button id="threeHun4">$300</button><button id="threeHun5">$300</button><br/>
@@ -24,11 +26,9 @@
 						<button id="nineHun">$900</button><button id="nineHun1">$900</button><button id="nineHun2">$900</button><button id="nineHun3">$900</button><button id="nineHun4">$900</button><button id="nineHun5">$900</button><br/>
 						<button id="thousand">$1000</button><button id="thousand1">$1000</button><button id="thousand2">$1000</button><button id="thousand3">$1000</button><button id="thousand4">$1000</button><button id="thousand5">$1000</button>				
 					</div>
-						<p id="question">Question:</p>
+						<p id="question">Question:<span></p>
 						<p id="difficulty">Points: | Category:</p>
-						<p id="date"></p>
-						<button id="getAnswer">Show Answer</button>
-						<p id="answer"><br/>
+						<button id="getAnswer">REVEAL ANSWER</button> <span id="answer"></span><br/>
 						
 						<!--
 						<div id="playerOne">
@@ -41,23 +41,24 @@
 						Player Three: <input type="radio" id="radioButton"></span>
 						</div><br/>	
 						-->
-
+						<br/>
 						<div id="decision">
-						<button id="close">Close Enough/Correct</button>
+						<button id="close">Correct</button>
 						<button id="wrong">Incorrect</button>
 						</div>
+						<br/>
 						
 						<div id="scoreBoard">
 								<span id="firstScore">
-									<input type="checkbox" id="radioOne" class="radios" checked=checked><span id="keyMe" data-editable>Player One</span><br/>
+									<input type="checkbox" id="radioOne" class="radios"><span id="name1" data-editable>Player One</span><br/>
 									$<span id="oneScore">0</span>								
 								</span>
 								<span id="secondScore">
-									<input type="checkbox" id="radioTwo" class="radios"><span data-editable>Player Two</span><br/>
+									<input type="checkbox" id="radioTwo" class="radios"><span id="name2" data-editable>Player Two</span><br/>
 									$<span id="twoScore">0</span>
 								</span>
 								<span id="thirdScore">
-									<input type="checkbox" id="radioThree" class="radios"><span data-editable>Player Three</span><br/>
+									<input type="checkbox" id="radioThree" class="radios"><span id="name3" data-editable>Player Three</span><br/>
 									$<span id="threeScore">0</span>
 								</span>
 						</div>
@@ -68,7 +69,8 @@
 						<span id="disclaimer">*The higher the value the harder the question</span></br>
 						2. The question will be read and must be answered within 10 seconds</br>
 						3. All answers must be given in the form of a question</br>
-						4. Raise your hand to steal if the person answers incorrectly</br>
+						4. Raise your hand to answer the question</br>
+						<span id="disclaimer">*You don't have the be the person to pick the question to "Buzz" in</span></br>
 						5. The game will end once all questions have been answered
 						</div>
 				</div>
