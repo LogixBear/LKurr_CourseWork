@@ -255,7 +255,7 @@ function MyApp(){
 	$(".movies").on("click",function(){
 		$.ajax({
 		url: "http://jservice.io/api/clues",
-		data: { category: 4},
+		data: { category: 21},
 		dataType: "json"})
 		.done(function(data) {
 			console.log(data);
@@ -267,7 +267,7 @@ function MyApp(){
 		$("#oneHun1").css("visibility", "hidden");//Hide Value
 		$.ajax({
 		url: "http://jservice.io/api/clues",
-		data: { category: 4, value: 100},
+		data: { category: 21, value: 100},
 		dataType: "json"})
 		.done(function(data) {
 			console.log(data);
@@ -290,7 +290,7 @@ function MyApp(){
 		$("#twoHun1").css("visibility", "hidden");//Hide Value
 		$.ajax({
 		url: "http://jservice.io/api/clues",
-		data: { category: 4, value: 200},
+		data: { category: 21, value: 200},
 		dataType: "json"})
 		.done(function(data) {
 			console.log(data);
@@ -313,7 +313,7 @@ function MyApp(){
 		$("#threeHun1").css("visibility", "hidden");//Hide Value
 		$.ajax({
 		url: "http://jservice.io/api/clues",
-		data: { category: 4, value: 300},
+		data: { category: 21, value: 300},
 		dataType: "json"})
 		.done(function(data) {
 			console.log(data);
@@ -336,7 +336,7 @@ function MyApp(){
 		$("#fourHun1").css("visibility", "hidden");//Hide Value
 		$.ajax({
 		url: "http://jservice.io/api/clues",
-		data: { category: 4, value: 400},
+		data: { category: 21, value: 400},
 		dataType: "json"})
 		.done(function(data) {
 			console.log(data);
@@ -359,7 +359,7 @@ function MyApp(){
 		$("#fiveHun1").css("visibility", "hidden");//Hide Value
 		$.ajax({
 		url: "http://jservice.io/api/clues",
-		data: { category: 4, value: 500},
+		data: { category: 21, value: 500},
 		dataType: "json"})
 		.done(function(data) {
 			console.log(data);
@@ -382,7 +382,7 @@ function MyApp(){
 		$("#sixHun1").css("visibility", "hidden");//Hide Value
 		$.ajax({
 		url: "http://jservice.io/api/clues",
-		data: { category: 4, value: 600},
+		data: { category: 21, value: 600},
 		dataType: "json"})
 		.done(function(data) {
 			console.log(data);
@@ -405,7 +405,7 @@ function MyApp(){
 		$("#sevenHun1").css("visibility", "hidden");//Hide Value
 		$.ajax({
 		url: "http://jservice.io/api/clues",
-		data: { category: 4, value: 600},//EXCEPTIOn QUESTION
+		data: { category: 21, value: 600},//EXCEPTIOn QUESTION
 		dataType: "json"})
 		.done(function(data) {
 			console.log(data);
@@ -430,7 +430,7 @@ function MyApp(){
 		$("#eightHun1").css("visibility", "hidden");//Hide Value
 		$.ajax({
 		url: "http://jservice.io/api/clues",
-		data: { category: 4, value: 800},
+		data: { category: 21, value: 800},
 		dataType: "json"})
 		.done(function(data) {
 			console.log(data);
@@ -453,7 +453,7 @@ function MyApp(){
 		$("#nineHun1").css("visibility", "hidden");//Hide Value
 		$.ajax({
 		url: "http://jservice.io/api/clues",
-		data: { category: 4, value: 800}, //EXCEPTION QUESTION
+		data: { category: 21, value: 800}, //EXCEPTION QUESTION
 		dataType: "json"})
 		.done(function(data) {
 			console.log(data);
@@ -478,7 +478,7 @@ function MyApp(){
 		$("#thousand1").css("visibility", "hidden");//Hide Value
 		$.ajax({
 		url: "http://jservice.io/api/clues",
-		data: { category: 4, value: 1000},
+		data: { category: 21, value: 1000},
 		dataType: "json"})
 		.done(function(data) {
 			console.log(data);
@@ -747,7 +747,7 @@ function MyApp(){
 	$(".history").on("click",function(){
 		$.ajax({
 		url: "http://jservice.io/api/clues",
-		data: { category: 67},
+		data: { category: 561},
 		dataType: "json"})
 		.done(function(data) {
 			console.log(data);
@@ -759,7 +759,7 @@ function MyApp(){
 		$("#oneHun3").css("visibility", "hidden");//Hide Value
 		$.ajax({
 		url: "http://jservice.io/api/clues",
-		data: { category: 67, value: 100},
+		data: { category: 561, value: 100},
 		dataType: "json"})
 		.done(function(data) {
 			console.log(data);
@@ -782,7 +782,7 @@ function MyApp(){
 		$("#twoHun3").css("visibility", "hidden");//Hide Value
 		$.ajax({
 		url: "http://jservice.io/api/clues",
-		data: { category: 67, value: 200},
+		data: { category: 561, value: 200},
 		dataType: "json"})
 		.done(function(data) {
 			console.log(data);
@@ -805,7 +805,7 @@ function MyApp(){
 		$("#threeHun3").css("visibility", "hidden");//Hide Value
 		$.ajax({
 		url: "http://jservice.io/api/clues",
-		data: { category: 67, value: 300},
+		data: { category: 561, value: 300},
 		dataType: "json"})
 		.done(function(data) {
 			console.log(data);
@@ -828,7 +828,7 @@ function MyApp(){
 		$("#fourHun3").css("visibility", "hidden");//Hide Value
 		$.ajax({
 		url: "http://jservice.io/api/clues",
-		data: { category: 67, value: 400},
+		data: { category: 561, value: 400},
 		dataType: "json"})
 		.done(function(data) {
 			console.log(data);
@@ -851,7 +851,7 @@ function MyApp(){
 		$("#fiveHun3").css("visibility", "hidden");//Hide Value
 		$.ajax({
 		url: "http://jservice.io/api/clues",
-		data: { category: 67, value: 500},
+		data: { category: 561, value: 500},
 		dataType: "json"})
 		.done(function(data) {
 			console.log(data);
@@ -874,7 +874,7 @@ function MyApp(){
 		$("#sixHun3").css("visibility", "hidden");//Hide Value
 		$.ajax({
 		url: "http://jservice.io/api/clues",
-		data: { category: 67, value: 600},
+		data: { category: 561, value: 600},
 		dataType: "json"})
 		.done(function(data) {
 			console.log(data);
@@ -897,7 +897,7 @@ function MyApp(){
 		$("#sevenHun3").css("visibility", "hidden");//Hide Value
 		$.ajax({
 		url: "http://jservice.io/api/clues",
-		data: { category: 67, value: 600}, //QUESTION EXCEPTION
+		data: { category: 561, value: 600}, //QUESTION EXCEPTION
 		dataType: "json"})
 		.done(function(data) {
 			console.log(data);
@@ -922,7 +922,7 @@ function MyApp(){
 		$("#eightHun3").css("visibility", "hidden");//Hide Value
 		$.ajax({
 		url: "http://jservice.io/api/clues",
-		data: { category: 67, value: 800},
+		data: { category: 561, value: 800},
 		dataType: "json"})
 		.done(function(data) {
 			console.log(data);
@@ -945,7 +945,7 @@ function MyApp(){
 		$("#nineHun3").css("visibility", "hidden");//Hide Value
 		$.ajax({
 		url: "http://jservice.io/api/clues",
-		data: { category: 67, value: 800}, //QUESTION EXCEPTION
+		data: { category: 561, value: 800}, //QUESTION EXCEPTION
 		dataType: "json"})
 		.done(function(data) {
 			console.log(data);
@@ -970,7 +970,7 @@ function MyApp(){
 		$("#thousand3").css("visibility", "hidden");//Hide Value
 		$.ajax({
 		url: "http://jservice.io/api/clues",
-		data: { category: 67, value: 1000},
+		data: { category: 561, value: 1000},
 		dataType: "json"})
 		.done(function(data) {
 			console.log(data);
@@ -1148,9 +1148,9 @@ function MyApp(){
 		.done(function(data) {
 			console.log(data);
 				//$( "#difficulty" ).text("Points: " + data[0].value + " | Category: " + data[0].category.title);
-				$( "#difficulty" ).text("Points: " + 700 + " | Category: " + data[1].category.title);
-				$( "#question" ).text("Question: " + data[1].question);
-				$( "#answer" ).text("Answer: " + data[1].answer);
+				$( "#difficulty" ).text("Points: " + 700 + " | Category: " + data[2].category.title);
+				$( "#question" ).text("Question: " + data[2].question);
+				$( "#answer" ).text("Answer: " + data[2].answer);
 				$("#answer").css("visibility", "hidden");
 				$("#getAnswer").css("visibility", "visible");
 				$("#error").css("visibility", "hidden");
