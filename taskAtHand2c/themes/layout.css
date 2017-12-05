@@ -4,6 +4,23 @@
 	text-align: center;
 }
 
+#main
+{
+	position: absolute;
+	right: 300px;
+	top: 100px;
+}
+
+#app>header {
+	padding: 0 0.5em;
+	font-size: 5em;
+	color: WhiteSmoke;
+	background-color: #006;
+	width: 33%;
+	height: 100%;
+	right: 0px;
+}
+
 #app
 {
     background-color: #ccccff;
